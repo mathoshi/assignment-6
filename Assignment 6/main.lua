@@ -28,6 +28,10 @@ local function cal( event )
 
 	value = tonumber(inputBox.text)
 	print(value)
+
+	for x = 0, value, 1 do 
+		 
+	end
 end
 
 Button:addEventListener( "touch", cal)
