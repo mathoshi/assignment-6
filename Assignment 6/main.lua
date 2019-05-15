@@ -29,9 +29,14 @@ local function cal( event )
 	value = tonumber(inputBox.text)
 	print(value)
 
+	local answer = 0
+
 	for x = 0, value, 1 do 
-		 
+		 answer = answer + 4 * (((-1) ^ x) / (2 * x + 1))
+		 print(answer)  
 	end
+
+	print(answer)
 end
 
 Button:addEventListener( "touch", cal)
