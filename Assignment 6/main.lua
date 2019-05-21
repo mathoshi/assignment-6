@@ -24,19 +24,16 @@ local output = display.newText( "", display.contentCenterX, 400, "Arial", 15)
 output:setFillColor( 0, 0, 0)
 
 local function cal( event )
-	print("it works")
 
 	value = tonumber(inputBox.text)
-	print(value)
 
 	local answer = 0
 
 	for x = 0, value, 1 do 
-		 answer = answer + 4 * (((-1) ^ x) / (2 * x + 1))
-		 print(answer)  
+		answer = answer + 4 * (((-1) ^ x) / (2 * x + 1)) 
 	end
 
-	print(answer)
+	output.text = "The answer is: ".. answer
 end
 
 Button:addEventListener( "touch", cal)
